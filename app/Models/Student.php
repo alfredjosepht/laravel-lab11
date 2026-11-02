@@ -16,5 +16,10 @@ use Illuminate\Database\Eloquent\Model;
 class Student extends Model
 {
     // Columns that may be filled from a form with Student::create($request->...)
-    protected $fillable = ['roll_no', 'name', 'email', 'department', 'semester', 'cgpa'];
+    protected $fillable = ['roll_no', 'reg_no', 'name', 'email', 'department', 'semester', 'cgpa'];
+
+    protected $casts = [
+        'semester' => 'integer',
+        'cgpa'     => 'float',
+    ];
 }

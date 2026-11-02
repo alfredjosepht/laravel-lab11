@@ -32,5 +32,16 @@ class DatabaseSeeder extends Seeder
                 'cgpa'       => $cgpa,
             ]);
         }
+
+        // My own record (Activity 6)
+        Student::create([
+            'roll_no'    => '11',
+            'reg_no'     => 'NSS23CS011',
+            'name'       => 'Alfred Joseph T',
+            'email'      => 'alfred.joseph.t@example.com',
+            'department' => 'CSE',
+            'semester'   => 7,
+            'cgpa'       => null,
+        ]);
     }
 }
